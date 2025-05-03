@@ -7,7 +7,7 @@ This project is a simplified version of an eWallet application built for educati
 
 # MVP Features with Descriptions
 
-# User & Account Management
+## User & Account Management
 Handles basic user identity and access:
 - **User Registration**: Allow users to register using mobile number, email, and password. OTP can be simulated.
 - **Login/Logout**: Secure authentication using username and password.
@@ -15,7 +15,7 @@ Handles basic user identity and access:
 
 
 
-# Wallet Management
+## Wallet Management
 Manage virtual wallet balance and security:
 - **View Wallet Balance**: Users can see their current wallet balance on dashboard.
 - **Wallet Top-up**: Add funds to wallet via simulated methods (e.g., mock bank transfer or test card).
@@ -31,7 +31,7 @@ Enable user-to-user fund movement:
 
 
 
-# Payments
+## Payments
 Simulate merchant and bill payments:
 - **Scan & Pay**: Simulate QR scan with text input or static QR code image to send payments.
 - **Split Bills**: Allow simple division of a bill among selected users with equal or manual amounts.
@@ -39,7 +39,7 @@ Simulate merchant and bill payments:
 
 
 
-# Transaction History
+## Transaction History
 Track and manage past financial activity:
 - **Transaction List**: Show all sent, received, and top-up transactions.
 - **Filters**: Allow filtering by type (e.g., received, sent) or date.
@@ -61,7 +61,7 @@ Ensure essential safety mechanisms:
 
 
 
-# Tech Stack (Suggested for Learning)
+## Tech Stack (Suggested for Learning)
 
 - **Frontend**: React.js
 - **Backend**: Node.js (Express)
