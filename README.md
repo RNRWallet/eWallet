@@ -23,7 +23,7 @@ Manage virtual wallet balance and security:
 
 
 
-# Fund Transfer
+## Fund Transfer
 Enable user-to-user fund movement:
 - **P2P Transfer**: Send money to another user using phone number or wallet ID.
 - **Transaction Notes**: Allow optional message or description with each transfer.
@@ -47,14 +47,14 @@ Track and manage past financial activity:
 
 
 
-# Rewards (Optional)
+## Rewards (Optional)
 Offer basic gamification for engagement:
 - **Loyalty Points**: Award points for each transaction.
 - **Promo Code Simulation**: Apply promo code for cashback or bonus points.
 
 
 
-# Basic Security
+## Basic Security
 Ensure essential safety mechanisms:
 - **Transaction PIN**: Users must enter a secure 6-digit PIN before sending funds.
 - **Session Timeout**: Auto-logout after a set time of inactivity to protect access.
