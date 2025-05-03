@@ -9,9 +9,9 @@ This project is a simplified version of an eWallet application built for educati
 
 ## User & Account Management
 Handles basic user identity and access:
-- **User Registration**: Allow users to register using mobile number, email, and password. OTP can be simulated.
+- **User Registration**: Allow users to register using mobile number, email, and password. OTP can be simulated. User need to provide basic user profile details.
 - **Login/Logout**: Secure authentication using username and password.
-- **Profile Management**: Users can update their email, phone number, and password.
+- **Profile Management**: Users can update profile details and login password.
 
 
 
