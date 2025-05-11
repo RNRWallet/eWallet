@@ -1,27 +1,43 @@
 {
   "name": "e-wallet",
   "version": "0.0.1",
-  "packageManager": "yarn@4.9.1",
-  "scripts": {
-    "build:all": "yarn workspaces foreach --all run build"
-  },
-  "devDependencies": {
-    "@eslint/js": "9.26.0",
-    "@tsconfig/node22": "22.0.1",
-    "@tsconfig/strictest": "2.0.5",
-    "eslint": "9.26.0",
-    "eslint-plugin-import": "2.31.0",
-    "eslint-plugin-sort": "4.0.0",
-    "prettier": "3.5.3",
-    "prettier-eslint": "16.4.2",
-    "typescript": "5.8.3",
-    "typescript-eslint": "8.32.0"
-  },
   "type": "module",
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
+  "scripts": {
+    "build:all": "yarn workspaces foreach --all run build"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "^9.26.0",
+    "@eslint/json": "^0.12.0",
+    "@eslint/markdown": "^6.4.0",
+    "@monorepo-utils/workspaces-to-typescript-project-references": "2.10.4",
+    "@prettier/plugin-xml": "3.4.1",
+    "@tsconfig/node22": "22.0.1",
+    "@tsconfig/strictest": "2.0.5",
+    "@typescript-eslint/eslint-plugin": "8.31.1",
+    "@typescript-eslint/parser": "8.31.1",
+    "eslint": "9.26.0",
+    "eslint-config-prettier": "10.1.2",
+    "eslint-import-resolver-typescript": "4.3.4",
+    "eslint-plugin-check-file": "3.2.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-sort": "4.0.0",
+    "eslint-plugin-unused-imports": "4.1.4",
+    "globals": "16.1.0",
+    "prettier": "3.5.3",
+    "prettier-eslint": "16.4.2",
+    "prettier-plugin-gherkin": "3.1.2",
+    "prettier-plugin-organize-imports": "4.1.0",
+    "prettier-plugin-packagejson": "2.5.10",
+    "prettier-plugin-sql": "0.19.0",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.32.0"
+  },
+  "packageManager": "yarn@4.9.1",
   "engines": {
     "node": "^22.0.0"
   }

@@ -1,1 +1,1 @@
-export {checkLength} from './check-length'
+export { checkLength } from './check-length'

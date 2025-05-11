@@ -1,10 +1,6 @@
 {
   "extends": "./tsconfig.build.json",
-  "include": [
-    "eslint.config.js",
-    "apps",
-    "packages"
-  ],
+  "include": ["eslint.config.js", "./apps/**/*", "./packages/**/*"],
   "compilerOptions": {
     "paths": {
       "@rnr-wallet/utils": ["packages/utils/src"]

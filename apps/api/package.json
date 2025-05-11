@@ -1,12 +1,12 @@
 {
   "name": "@rnr-wallet/api",
-  "packageManager": "yarn@4.9.1",
-  "private": true,
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "build": "tsc --build --verbose"
   },
   "dependencies": {
     "@rnr-wallet/utils": "workspace:*"
-  }
+  },
+  "packageManager": "yarn@4.9.1"
 }

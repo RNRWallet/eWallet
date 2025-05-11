@@ -1,8 +1,7 @@
 {
   "name": "@rnr-wallet/utils",
-  "packageManager": "yarn@4.9.1",
-  "private": true,
   "version": "0.0.1",
+  "private": true,
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc --build --verbose"
@@ -10,5 +9,6 @@
   "devDependencies": {
     "@types/node": "22.15.17",
     "typescript": "5.8.3"
-  }
+  },
+  "packageManager": "yarn@4.9.1"
 }
