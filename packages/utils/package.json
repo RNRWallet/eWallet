@@ -1,11 +1,14 @@
 {
-  "name": "utils",
-  "packageManager": "yarn@4.9.1",
+  "name": "@rnr-wallet/utils",
+  "version": "0.0.1",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "main": "dist/index.js",
   "scripts": {
-    "build": "yarn workspaces foreach run build"
-  }
+    "build": "tsc --build --verbose"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.17",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "yarn@4.9.1"
 }
