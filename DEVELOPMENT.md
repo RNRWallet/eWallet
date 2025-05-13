@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 - Initialize npm project
 
   ```bash
-  yarn init -y
+  yarn init -2 -y
   ```
 
   A `.yarn` directory and `.yarnrc.yml` file will both be created that need to be checked into git. These are the files that will set up your project’s local Yarn instance.
