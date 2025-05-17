@@ -3,7 +3,7 @@
   "include": ["eslint.config.js", "./apps/**/*", "./packages/**/*"],
   "compilerOptions": {
     "paths": {
-      "@rnr-wallet/utils": ["packages/utils/src"]
+      "@rnr-wallet/utils": ["./packages/utils/src/"]
     }
   }
 }
