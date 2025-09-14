@@ -1,0 +1,155 @@
+---
+id: ehailing
+name: eHaling
+summary: The core business domain encompassing all ride-sharing platform operations for eHailing.
+version: 1.0.0
+owners:
+  - koneru9999
+  - platform
+domains:
+  - id: wallet
+badges:
+  - content: Core domain
+    backgroundColor: blue
+    textColor: blue
+    icon: RectangleGroupIcon
+  - content: Business Critical
+    backgroundColor: red
+    textColor: red
+    icon: ShieldCheckIcon
+  - content: Event-Driven
+    textColor: purple
+    backgroundColor: purple
+    icon: BoltIcon
+  - content: Microservices
+    textColor: blue
+    backgroundColor: blue
+    icon: CubeIcon
+---
+
+<Tiles>
+  <Tile
+    icon="UserGroupIcon"
+    href="/docs/users/koneru9999"
+    title="Contact the author"
+    description="Any questions? Feel free to contact the owners"
+  />
+  <Tile
+    icon="RectangleGroupIcon"
+    href={`/visualiser/domains/${frontmatter.id}/${frontmatter.version}`}
+    title="Domain Architecture"
+    description="Explore our domain structure and service interactions"
+  />
+</Tiles>
+
+## Overview
+
+TBA
+
+## 🎯 Domain Vision
+
+To create a seamless, scalable, and maintainable platform that delights end users while demonstrating modern software architecture best practices.
+
+## 🏗️ Strategic Design
+
+### Domain Boundaries
+
+The e-hailing domain is strategically divided into following subdomains based on our [microservices architecture](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-001-microservices-architecture):
+
+TBA
+
+### Ubiquitous Language
+
+| Term | Definition |
+|------|------------|
+| **Wallet** | A digital wallet available for ... |
+
+## 💼 Event Storming
+
+We conducted an [event storming](https://www.eventstorming.com/) session for the e-wallet domain to understand its complexities and subdomain interactions. This session helped us map key events, commands, and aggregates, aligning our technical implementation with business needs for robust functionality.
+
+Our implementation follows an [event-driven architecture with CQRS pattern](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-002-event-driven-cqrs) to ensure scalability and loose coupling between services.
+
+TBA
+
+## 📊 High-level architecture
+
+To effectively visualize and understand the architecture of the eHailing system, we will employ the [C4 model](https://c4model.com/). This model allows us to represent the system at various levels of abstraction, providing a comprehensive view of its structure and interactions.
+
+Our architecture follows several key architectural decisions:
+- [Microservices Architecture](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-018-k6-performance-testing) for service boundaries
+- [Quarkus for Cloud-Native Development](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-003-quarkus-cloud-native) for orchestration
+- [Container-First Deployment Strategy](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-007-aca-deployment) for consistency
+- [API Gateway Pattern](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-008-api-gateway) for unified access
+
+### System Context Diagram
+
+TBA
+
+### Container Diagram
+
+TBA
+
+The data storage strategy is detailed in our [PostgreSQL database decision](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-004-postgresql-database), with event-driven communication patterns outlined in our [Event-Driven CQRS approach](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-002-event-driven-cqrs).
+
+## 🔄 Interactive Architecture Diagram
+
+The following diagram provides an interactive view of the architecture of the eHailing system. You can explore the components, their relationships, and the flow of data between them.
+
+TBA
+
+## Current Production Architecture
+
+Below is the interactive event-driven architecture diagram for the eHailing Store system.
+
+TBA
+
+## 📈 Domain Metrics
+
+### Service Level Objectives (SLOs)
+
+| Metric | Target | Description |
+|--------|--------|-------------|
+| **Availability** | 99.9% | Uptime for critical services |
+| **Response Time** | < 200ms | P95 latency for API calls |
+| **Ride booking Success Rate** | > 98% | Successful ride completions |
+| **Event Processing** | < 1s | Time to process domain events |
+
+### Key Performance Indicators (KPIs)
+
+- **Rides per Hour**: Average throughput capacity
+- **Ride Abandonment Rate**: Percentage of uncompleted/cancelled rides
+- **Service Health Score**: Composite reliability metric
+
+## 🛡️ Security & Compliance
+
+### Security Measures
+
+- **Authentication**: JWT-based user authentication via [Keycloak Identity Management](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-005-keycloak-identity)
+- **Authorization**: Role-based access control (RBAC)
+- **Encryption**: TLS 1.3 for all communications
+- **Data Protection**: PCI DSS compliance for payments
+
+### Audit & Compliance
+
+- Complete audit trail via event sourcing
+- GDPR compliance for user data
+- Regular security assessments
+- Automated compliance checking
+
+## 🔍 Observability
+
+Our observability strategy is built on modern cloud-native principles, following our [Quarkus cloud-native development approach](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-003-quarkus-cloud-native) and [container-first deployment strategy](https://rnrwallet.github.io/eWallet/architecture-decisions/adr-007-aca-deployment).
+
+### Three Pillars
+
+1. **Metrics**: Prometheus + Grafana dashboards
+2. **Logging**: Structured logging
+3. **Tracing**: Distributed tracing with OpenTelemetry
+
+### Monitoring Dashboards
+
+- Service health and availability
+- Business metrics and KPIs
+- Performance bottleneck detection
+- Error rate tracking

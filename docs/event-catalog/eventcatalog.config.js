@@ -64,6 +64,7 @@ export default {
   mermaid: {
     iconPacks: ["logos"],
   },
+  output: 'static',
   logo: {
     alt: "eHaling",
     src: "/logo.svg",
@@ -91,35 +92,35 @@ export default {
   api: {
     fullCatalogAPIEnabled: true,
   },
-  generators: [
-    [
-      "@eventcatalog/generator-openapi",
-      {
-        services: [
-          {
-            path: path.join(__dirname, "openapi-files", "wallet-api.yml"),
-            id: "Wallet Service",
-            name: "Wallet Service",
-            version: "1.0.0",
-            generateMarkdown: generateMarkdownForService,
-          },
-        ],
-        domain: {
-          id: "wallet",
-          name: "Wallet",
-          version: "1.0.0",
-          generateMarkdown: generateMarkdownForDomain,
-        },
-        sidebarBadgeType: "HTTP_METHOD",
-        httpMethodsToMessages: {
-          GET: "query",
-          POST: "command",
-          PUT: "command",
-          DELETE: "command",
-        },
-      },
-    ],
-  ],
+  // generators: [
+  //   [
+  //     "@eventcatalog/generator-openapi",
+  //     {
+  //       services: [
+  //         {
+  //           path: path.join(__dirname, "openapi-files", "wallet-api.yml"),
+  //           id: "Wallet Service",
+  //           name: "Wallet Service",
+  //           version: "1.0.0",
+  //           generateMarkdown: generateMarkdownForService,
+  //         },
+  //       ],
+  //       domain: {
+  //         id: "wallet",
+  //         name: "Wallet",
+  //         version: "1.0.0",
+  //         generateMarkdown: generateMarkdownForDomain,
+  //       },
+  //       sidebarBadgeType: "HTTP_METHOD",
+  //       httpMethodsToMessages: {
+  //         GET: "query",
+  //         POST: "command",
+  //         PUT: "command",
+  //         DELETE: "command",
+  //       },
+  //     },
+  //   ],
+  // ],
   visualiser: {
     channels: {
       renderMode: "flat",
