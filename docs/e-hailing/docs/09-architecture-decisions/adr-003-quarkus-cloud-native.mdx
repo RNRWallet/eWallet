@@ -1,0 +1,34 @@
+---
+sidebar_position: 4
+title: ADR-003 - Quarkus for Cloud-Native Development
+last_update:
+  author: V K
+---
+
+# ADR-003: .Quarkus for Cloud-Native Development
+
+## Status
+
+**Accepted** - August 2025
+
+## Context
+
+eHailing's microservices architecture requires sophisticated orchestration, service discovery, observability, and deployment capabilities. The development and operational challenges include:
+
+- **Local Development Complexity**: Running and debugging multiple services simultaneously
+- **Service Orchestration**: Managing dependencies and startup order across services
+- **Observability**: Distributed tracing, logging, and metrics across service boundaries
+- **Configuration Management**: Centralized configuration for multiple environments
+- **Resource Management**: Efficient resource allocation and service discovery
+- **Cloud Deployment**: Streamlined deployment to cloud platforms with minimal configuration
+- **Development Experience**: Simplified developer onboarding and productivity
+
+Traditional approaches would require significant custom infrastructure code, multiple configuration files, and complex setup procedures that would hinder development velocity and system maintainability.
+
+## Decision
+
+Adopt Quarkus as the cloud-native development framework to provide integrated service orchestration, observability, and deployment capabilities for the eHailing microservices ecosystem.
+
+### Core Quarkus Components
+
+TBA
