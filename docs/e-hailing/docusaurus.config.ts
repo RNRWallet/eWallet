@@ -46,7 +46,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/RNRWallet/eWallet/tree/main/docs/docusaurus",
+            "https://github.com/RNRWallet/eWallet/tree/main/docs/e-hailing",
           sidebarCollapsed: false,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -61,7 +61,7 @@ const config: Config = {
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
         //   editUrl:
-        //     "https://github.com/RNRWallet/eWallet/tree/main/docs/docusaurus",
+        //     "https://github.com/RNRWallet/eWallet/tree/main/docs/e-hailing",
         //   // Useful options to enforce blogging best practices
         //   onInlineTags: "warn",
         //   onInlineAuthors: "warn",
