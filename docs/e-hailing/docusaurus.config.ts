@@ -26,7 +26,7 @@ const config: Config = {
   organizationName: "RNRWallet",
   projectName: "eWallet",
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -140,7 +140,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://ehailng.netlify.app/",
+          href: "https://ehailing.netlify.app/",
           label: "Event Catalog",
           position: "left",
         },
@@ -186,10 +186,10 @@ const config: Config = {
         {
           title: "More",
           items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
+            // {
+            //   label: "Blog",
+            //   to: "/blog",
+            // },
             {
               label: "EventCatalog",
               href: "https://ehailing.netlify.app/",
