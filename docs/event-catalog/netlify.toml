@@ -1,0 +1,10 @@
+[build]
+base = "docs/event-catalog"
+publish = "dist"
+command = "yarn run build"
+
+[functions]
+directory = "docs/event-catalog/netlify/functions"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
