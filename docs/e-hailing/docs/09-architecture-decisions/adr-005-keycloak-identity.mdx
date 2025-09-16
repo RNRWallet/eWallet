@@ -1,0 +1,84 @@
+---
+sidebar_position: 6
+title: ADR-005 - Keycloak for Identity Management
+last_update:
+  author: V K
+---
+
+# ADR-005: Keycloak for Identity Management
+
+## Status
+
+**Accepted** - August 2025
+
+## Context
+
+eHailing requires centralized identity management for its microservices architecture. The system needs:
+
+- Single sign-on (SSO) across services
+- JWT token authentication
+- Role-based access control
+- Easy Kotlin/Java integration with Quarkus
+- Custom theming support
+
+## Decision
+
+Use **Keycloak** as the identity provider, integrated with Quarkus for containerized deployment and service discovery.
+
+## Implementation
+
+### Setup
+
+Keycloak is configured as ... with:
+
+- Realm configuration from `Realms.json`
+- Custom theme support via provider mount
+- PostgreSQL database integration
+- Service-to-service client setup
+
+### Authentication Flow
+
+1. Services validate JWT bearer tokens from Keycloak
+2. Token introspection middleware for additional validation
+3. Automatic client configuration per service
+
+### Key Components
+
+- **KeycloakExtensions**: Aspire resource configuration
+- **KeycloakClaimsTransformation**: Role mapping for authorization
+- **KeycloakTokenIntrospectionMiddleware**: Token validation
+- **Custom Theme**: Keycloakify-based UI customization
+
+## Benefits
+
+- Open source with no licensing costs
+- Full OAuth 2.0/OIDC compliance
+- Seamless Kotlin/Java integration
+- Custom theming capabilities
+- PostgreSQL data persistence
+
+## Alternatives Considered
+
+- **Auth0**: Managed service but costly at scale
+- **AWS Cognito**: AWS lock-in with limited customization
+
+## Consequences
+
+### Positive
+
+- Centralized identity management across services
+- Open source with no licensing fees
+- Standards-compliant OAuth 2.0/OIDC implementation
+- Easy Kotlin/Java integration through Quarkus framework
+- Custom theming and branding support
+
+### Challenges
+
+- Additional infrastructure component to manage
+- Single point of failure requiring high availability setup
+- Learning curve for Keycloak administration
+
+## Related Decisions
+
+- [ADR-003: Quarkus for Cloud-Native Development](./adr-003-quarkus-cloud-native.mdx)
+- [ADR-006: WebSockets for Real-time Communication](./adr-006-websockets-realtime.mdx)
