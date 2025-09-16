@@ -23,12 +23,12 @@ gantt
     Quarkus                 :done, foundation3, 2025-08-01, 30d
     section Data & Storage
     PostgreSQL             :done, data1, 2025-07-20, 30d
-    Redis SignalR          :done, data2, 2025-08-15, 30d
+    Redis WebSockets       :done, data2, 2025-08-15, 30d
     Kafka                  :done, data3, 2025-09-01, 30d
     section Security & Identity
-    Keycloak Identity      :done, security1, 2025-07-25, 45d
+    Keycloak Identity      :done, security1, 2025-08-25, 45d
     section Communication
-    SignalR Realtime       :done, comm1, 2025-08-01, 30d
+    WebSocket Realtime     :done, comm1, 2025-08-01, 30d
     API Gateway            :done, comm2, 2025-08-10, 30d
     gRPC                   :done, comm3, 2025-10-01, 30d
     section Operations
@@ -45,19 +45,19 @@ gantt
 
 ### 🏗️ Foundation Architecture
 
-| ADR                                             | Title                                    | Status   | Impact |
-| ----------------------------------------------- | ---------------------------------------- | -------- | ------ |
-| [ADR-001](./adr-001-microservices-architecture) | Microservices Architecture               | Accepted | High   |
-| [ADR-002](./adr-002-event-driven-cqrs)          | Event-Driven Architecture with CQRS      | Accepted | High   |
-| [ADR-003](./adr-003-quarkus-cloud-native)       | Quarkus for Cloud-Native Development     | Accepted | High   |
-| [ADR-016](./adr-016-ddd)                        | Domain-Driven Design Implementation      | Accepted | High   |
+| ADR                                             | Title                                | Status   | Impact |
+|-------------------------------------------------|--------------------------------------|----------|--------|
+| [ADR-001](./adr-001-microservices-architecture) | Microservices Architecture           | Accepted | High   |
+| [ADR-002](./adr-002-event-driven-cqrs)          | Event-Driven Architecture with CQRS  | Accepted | High   |
+| [ADR-003](./adr-003-quarkus-cloud-native)       | Quarkus for Cloud-Native Development | Accepted | High   |
+| [ADR-016](./adr-016-ddd)                        | Domain-Driven Design Implementation  | Accepted | High   |
 
 ### 💾 Data & Storage
 
 | ADR                                         | Title                          | Status   | Impact |
-| ------------------------------------------- | ------------------------------ | -------- | ------ |
+|---------------------------------------------|--------------------------------|----------|--------|
 | [ADR-004](./adr-004-postgresql-database)    | PostgreSQL as Primary Database | Accepted | High   |
-| [ADR-010](./adr-010-redis-signalr-scale)    | Redis for SignalR Scaling      | Accepted | Medium |
+| [ADR-010](./adr-010-redis-websockets-scale) | Redis for WebSockets Scaling   | Accepted | Medium |
 | [ADR-011](./adr-011-kafka-message)          | Kafka for Message Broker       | Accepted | High   |
 | [ADR-013](./adr-013-wallet-eventsoucring)   | Event Sourcing for wallet      | Accepted | Medium |
 
@@ -69,12 +69,12 @@ gantt
 
 ### 🌐 Communication & Integration
 
-| ADR                                          | Title                               | Status   | Impact |
-| -------------------------------------------- | ----------------------------------- | -------- | ------ |
-| [ADR-006](./adr-006-signalr-realtime)        | SignalR for Real-time Communication | Accepted | Medium |
-| [ADR-008](./adr-008-api-gateway)             | API Gateway with YARP               | Accepted | High   |
-| [ADR-017](./adr-017-grpc)                    | gRPC for Service Communication      | Accepted | Medium |
-| [ADR-014](./adr-014-sendgrid-email-provider) | SendGrid Email Provider             | Accepted | Low    |
+| ADR                                          | Title                                  | Status   | Impact |
+|----------------------------------------------|----------------------------------------|----------|--------|
+| [ADR-006](./adr-006-websockets-realtime)     | WebSockets for Real-time Communication | Accepted | Medium |
+| [ADR-008](./adr-008-api-gateway)             | API Gateway                            | Accepted | High   |
+| [ADR-017](./adr-017-grpc)                    | gRPC for Service Communication         | Accepted | Medium |
+| [ADR-014](./adr-014-sendgrid-email-provider) | SendGrid Email Provider                | Accepted | Low    |
 
 ### ⚙️ Operations & Deployment
 
